@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,900;1,400;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- add FontAwesome here -->
+    <script src="https://kit.fontawesome.com/bab41b580f.js"
+    crossorigin="annonymous"></script>
 </head>
 <body>
     <header>
@@ -31,12 +32,37 @@
             <div id="summary">
                 <i class="fas fa-utensils fa-3x"></i>
                 <div id="summary-text">
-                    <p>Delivery by 7pm, April 13, 2020</p>
+                    <p>Delivery by 7pm, September 15, 2022</p>
                     <p>6 items, <span class="check"></span> $31.44</p>
                 </div>
             </div>
             
-            <!-- form goes here. -->
+            <form>
+                <fieldset>
+                    <legend>Delivery Information</legend>
+                    <p class="hint">*- required field</p>
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="user-name">
+                    <label for=""email">Email Address *</label>
+                    <input type="email" id="email" name="user_email">
+                    <p class="hint">Receipt will be sent to this address.</p>
+                    <label for="address1">Street Address *</label>
+                    <input type="text" id="address1" name="user_address1">
+                    <label for="address2">Apartment/Office Number</label>
+                    <input type="text" id="address2" name="user-address2">
+                    <label for ="zip">Zip Code *</label>
+                    <input type="text" id="zip" name="user-zip">
+                    <p class="hint">City and State will be looked up from Zip Code</p>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="user-phone">
+                    <p class="hint">No phone? Include alternate contact below.</p>
+                    <label for="delivery_instructions">Delivery Instructions</label>
+                    <textarea id="delivery-instructions"
+                    name="user-delivery-instructions"></textarea>
+                    <button type="submit">Continue to Billing</button>
+                </fieldset>
+
+            </form>
             
         </div>
     </main>
